@@ -1,16 +1,128 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 50px;
+  color: #333;
+}
+
+/* タイトルのスタイル */
+h1 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* エラーメッセージのスタイル */
+.error-explanation {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+}
+
+.error-explanation ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.error-explanation li {
+  list-style-type: disc;
+}
+
+.flash-message {
+  color: #2eb62e;
+}
+
+/* フォーム全体のスタイル */
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* リンクのスタイル */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* リンクの間隔調整 */
+a + a {
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* テーブル全体の影 */
+  border-radius: 5px; /* 角丸 */
+  overflow: hidden; /* 丸い角をはみ出さないようにする */
+}
+
+th, td {
+  padding: 15px;
+  border: none;
+}
+
+th {
+  background-color: #007bff; /* ヘッダー背景色 */
+  color: #fff; /* ヘッダー文字色 */
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f9fa; /* 奇数行の背景色 */
+}
+
+tr:nth-child(even) {
+  background-color: #e9ecef; /* 偶数行の背景色 */
+}
